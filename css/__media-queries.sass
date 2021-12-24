@@ -1,0 +1,28 @@
+@media screen and(min-width: 865px) 
+	.main
+		min-height: 500px 
+	.card
+		grid-template-columns: repeat(2, minmax(400px,1fr))
+		&__image
+			order: 2
+			&-mobile
+				display: none
+			&-desktop
+				display: block
+		&__body
+			text-align: left
+			grid-template-columns: repeat(3, 130px)
+			justify-content: center
+			padding: 0
+
+		&__title
+			grid-column: span 3
+			font-size: 2.3rem
+			align-self: end
+			margin-top: 0
+		&__text
+			grid-column: span 3
+			align-self: start
+			margin: 0
+			width: 90%
+		&__stats

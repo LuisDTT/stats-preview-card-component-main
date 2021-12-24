@@ -1,0 +1,63 @@
+.main
+	font-family: 'Inter', sans-serif
+	background: $main_bg
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 100vh
+	min-height: 930px
+
+.card
+	background: $card_bg
+	border-radius: 10px
+	overflow: hidden
+	display: grid
+	grid-template-columns: minmax(min-content, 500px)
+	margin: 0 1.7em 
+	&__image
+		position: relative
+		&-mobile
+			width: 100%
+			height: 100%
+		&-desktop
+			display: none
+		&-grad
+			background: rgba(79, 0, 128, 0.58)
+			position: absolute
+			top: 0
+			height: 100%
+			width: 100%
+	&__body
+		padding: 25px 30px
+		text-align: center
+		display: grid
+	&__title
+		color: $heading-stats
+		font-size: 1.7rem
+		&-accent
+			color: $accent
+	&__text
+		color: $main-paragraph
+		font-size: 15px
+		line-height: 1.5rem
+	&__stats
+		&-number
+			color: $heading-stats
+			font-weight: 700
+			font-size: 1.5rem
+			margin-bottom: 0
+		&-text
+			color: $stat-headings
+			font-family: 'Lexend Deca', sans-serif
+			text-transform: uppercase
+			font-size: 13px
+			letter-spacing: 1px
+			margin-top: 7px
+
+.attribution
+	position: fixed
+	bottom: 0
+	color: #fff
+	font-size: 13px
+	a
+		color: rgba(180, 0, 128, 0.58)
